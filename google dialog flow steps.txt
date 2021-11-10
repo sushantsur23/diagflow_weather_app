@@ -1,0 +1,105 @@
+1. https://dialogflow.cloud.google.com/#/agent/firstbot-rwug/intents
+2. crate a agent
+3. then create a intents
+try it now
+4. create over the intent and you can config intent and response
+it will be a little bit boring
+conversastion will be boring
+5. if something has not been tain over the intent it will go for fallback intent
+6. you can create your custom intent
+question will not be same as intent but it will be aware about it
+7. use knowledge base
+you can keep the question which are asking frequnetly
+you can dump in knowledge feature
+8. entities
+weather 
+genral question does not make sense
+we need to specify the city
+so in city variable we can have city name
+go inside the entity 
+city name 
+kolkata
+calcutta 
+bangalore
+bangluru
+sys-geo-city 
+---------------------------------------------------------------------
+1. fullfilment
+2. integration
+google dialog flow--->pyhton app--->weather API
+openweathermap
+you need to subceribe this
+request and response in API
+what we want
+just give the city name and get a weather
+3. flask API
+4. route name webhook(conventation)
+5. weather API
+api call structure
+api response structure
+5. in dialog flow we have a request structure
+queryresult
+parameter
+city
+then you will get a name delhi
+6. so the process will be 
+           jsonreq
+Dialog Flow<---python--->APi
+           ---->     <----
+           jsonresp
+step by step we getting city name via json response
+and we are seding req to API
+then we are getting ans that we are extracting
+and then we are sending it to full fillment text
+----------------------------------------
+for telegram
+bot father
+/newbot
+name of chatbot
+name of user
+genrate the key paste inside the telegram dialogflow
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

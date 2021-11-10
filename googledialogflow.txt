@@ -1,0 +1,75 @@
+for google dialogflow we don't need to any subscription we only need to login with email id
+ 
+1. agent-->
+create a agent(old project or new project you have to choose both of them) 
+
+2. Intent-->
+create a new intent(intent is just a category of sentences in which category we need to use sentence)
+intent 
+training phase
+response
+two intent by default
+first default welcome intent
+second default fallback intent
+custom intent we can also create(intent --> training phrase response)
+
+3. knowledge base-->
+create a FAQ 
+we can create a FAQ with DF 
+we can use a knowledge base
+for knowledge base enabling the beta features go inside the setting and enable the beta features
+for knowledge base we have a sevral options 
+first option we have we can upload the data as csv file(question answer and between question and answer you should put comma)
+second option we have we can upload the data via cloud also
+
+4. entities-->
+for example weather suppose we have a weather and we have to create a weather report we ask some of question which we have define inside the intent and their responses
+but we are not getting city name inside it so we need to check with this city name 
+so we will use variable inside that we can keep the city name
+that part comes under the entities
+go insdie the entity
+create a entity
+default synonyms
+create a city names and their synonyms
+but there are too many cities name and we have to create it manually the answer is NO
+so in the intent section it self you can check their is a option of action and parameter you can check with this two params
+you can make the parameter is required and you can add the message as well
+NOTE:- we don't need to give all the cities name we just need to add one params that is sys_geo_city(there are many params) google has trained this parameter over the all the cities name in the world
+
+Now it is time for custmization(fullfillment & integration)(connect our code to python code) 
+API weather data https://openweathermap.org/api(we can use this api with python also in python we have pyowm)
+with request we can get the URL
+with python package we can also use that url(pyowm we have used)
+gdfbot-->pyhton application-->hit the api(this is the process)
+in app.py file there is a lot of thing to understand how we are giving the query and all those thing just read it.
+try to prdict anything just go inside the digonistic info okay(in RAW format)
+go inside the intent and enable the webhook for internet if you want to see two more information
+people wil give the city name in their message okay so we need to extract that city name in digonistic info we h=can extract tat city name
+def process() is a imp function.
+just simple right click and run your api
+via postman run your application give inside the postman your dignostic info part then is present in json format.
+
+5.fullfillment-->
+go inside the fullfillment and activate the webhook part/their is another option as like inline option that is fpr nodejs devloper.
+
+6. integration-->
+url--> paste the cloud url in url section and write your route name okay
+but it has limitation till google dialog flow we need to do more
+so we have to integrate our google dialog flow to any channal
+with web demo you can integrate with website
+click on it
+two option
+1. link for website chat
+2. iframe code just save it as a html file
+3. for telegram 
+just go inside the telegram okay and you have to write the token okay
+open telegram open bot father (/newbot and name end with _bot)
+
+7. perbuil agent-->
+if we don't want to train a bot from a scratch okay then we need to use prebuilt agent google has arady trained for you gys
+
+8. small talk-->
+create a small small talk just enable it inside the enable section or just need to use it.
+
+9. history-->
+check the logs with history
