@@ -33,7 +33,7 @@ def webhook():
 def processRequest(req):
     result = req.get("queryResult")
     parameters = result.get("parameters")
-    city = parameters.get("city")
+    city = parameters.get("geo-city")
     observation = owm.weather_at_place(str(city))
     #print(type(observation))
     w = observation.get_weather()
